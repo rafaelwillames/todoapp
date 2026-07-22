@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TodoAPP</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>TodoAPP</h1>
+
+    <form id="new-task-form" class="task-form" autocomplete="off">
+      <input
+        id="new-task-input"
+        class="task-input"
+        type="text"
+        name="title"
+        placeholder="O que precisa ser feito?"
+        aria-label="Nova tarefa"
+        maxlength="200"
+        required
+      />
+      <button type="submit" class="btn btn-add">Adicionar</button>
+    </form>
+
+    <div class="filters" role="group" aria-label="Filtrar tarefas">
+      <button type="button" class="btn-filter is-active" data-filter="all">Todas</button>
+      <button type="button" class="btn-filter" data-filter="active">Pendentes</button>
+      <button type="button" class="btn-filter" data-filter="completed">Concluídas</button>
+    </div>
+
+    <ul id="task-list" class="task-list" aria-live="polite"></ul>
+
+    <p id="empty-state" class="empty-state" hidden>Nenhuma tarefa por aqui ainda.</p>
+
+    <footer class="app-footer">
+      <span id="task-count" class="task-count"></span>
+      <button type="button" id="clear-completed" class="btn-link">Limpar concluídas</button>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
