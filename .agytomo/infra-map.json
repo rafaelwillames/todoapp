@@ -1,0 +1,7 @@
+{
+  "stack": [],
+  "env": [],
+  "services": [],
+  "deployTargets": ["Vercel", "Netlify", "Railway", "Render", "Fly.io"],
+  "notes": "Scaffold repository: contains only README.md identifying the project as 'TodoAPP'. No source code, dependency manifest, lockfile, build tooling, Dockerfile, .env.example, or CI config is present, so runtime, install/dev/build/start commands, localUrl, environment variables, and external services could not be verified and are omitted. deployTargets are unverified suggestions to reconsider once the actual stack is defined."
+}
